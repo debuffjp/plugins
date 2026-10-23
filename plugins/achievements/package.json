@@ -1,0 +1,37 @@
+{
+  "name": "@debuffjp/plugin-achievements",
+  "version": "0.1.0",
+  "description": "Achievements unlocked by game events, saved locally, readable by tools and platform adapters",
+  "keywords": [
+    "debuff",
+    "debuff-plugin",
+    "gamedev",
+    "browser-game",
+    "achievements",
+    "trophies"
+  ],
+  "license": "MIT",
+  "homepage": "https://debuff.jp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debuffjp/plugins.git",
+    "directory": "plugins/achievements"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@debuffjp/core": ">=0.13.3 <1"
+  }
+}

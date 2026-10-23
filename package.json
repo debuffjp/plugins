@@ -1,0 +1,25 @@
+{
+  "name": "debuff-plugins",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "plugins/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "biome check .",
+    "registry": "node scripts/registry.mjs",
+    "check": "npm run lint && npm run build && npm test && node scripts/registry.mjs --check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@debuffjp/core": "^0.13.3",
+    "happy-dom": "^21.0.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

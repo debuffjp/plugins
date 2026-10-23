@@ -1,0 +1,37 @@
+{
+  "name": "@debuffjp/plugin-analytics",
+  "version": "0.1.0",
+  "description": "Batched gameplay analytics (scenes, events, errors) sent to any endpoint you choose",
+  "keywords": [
+    "debuff",
+    "debuff-plugin",
+    "gamedev",
+    "browser-game",
+    "analytics",
+    "telemetry"
+  ],
+  "license": "MIT",
+  "homepage": "https://debuff.jp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debuffjp/plugins.git",
+    "directory": "plugins/analytics"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@debuffjp/core": ">=0.13.3 <1"
+  }
+}
