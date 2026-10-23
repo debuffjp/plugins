@@ -1,6 +1,7 @@
 import { Game } from "@debuffjp/core";
 import { vi } from "vitest";
 
+// Swap for createTestGame() from @debuffjp/core/testing once a core release ships it.
 /** happy-dom has no canvas backends: return no WebGL2 and a no-op 2D context so `Game` runs on Canvas 2D. */
 export function makeGame(): Game {
   const canvas = document.createElement("canvas");
